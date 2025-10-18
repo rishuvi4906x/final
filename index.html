@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishu's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"> <!-- Google Font for a modern look -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <header>
+        <nav>
+            <div class="logo">Rishu<span>.exe</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Words</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I’m Rishu Vishwakarma, a web developer with a passion for building clean, responsive, and user-focused websites and web applications. I specialize in front-end development using HTML, CSS, JavaScript, and modern frameworks like React, but I’m also comfortable working across the full stack with tools like Node.js and Express.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>With only few years experience in web development, I specialize in front-end technologies like HTML, CSS, and little bit JavaScript. I love turning ideas into reality through code.</p>
+    </section>
+<section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <i class="skill-icon fab fa-java wave-1"></i>
+            <i class="skill-icon fab fa-python wave-2"></i>
+            <i class="skill-icon fas fa-code wave-3"></i> 
+            <i class="skill-icon fab fa-java wave-4"></i> 
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML/CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My Deep Words</h2>
+        <div class="projects-container">
+            <div class="project-card" onclick="">
+                <img src="r1.jpg" alt="">
+                <h3>BIRTHPLACE</h3>
+                <p>I was born in Chahaniya, a place known for its rich cultural heritage and vibrant community spirit.</p>
+            </div>
+            <div class="project-card" onclick="">
+                <img src="r2.png" alt="">
+                <h3>CURIOSITY</h3>
+                <p>I am constantly exploring how these advancements can solve real-world problems and open new possibilities.</p>
+            </div>
+            <div class="project-card" onclick="">
+                <img src="rishu2.JPG" alt="">
+                <h3>DESTINY</h3>
+                <p>I believe destiny is not merely a path prewritten, but a journey shaped by choices, persistence, and purpose.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <img id="modal-image" src="" alt="Project Image">
+        </div>
+    </div>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rishu Vishwakarma. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
